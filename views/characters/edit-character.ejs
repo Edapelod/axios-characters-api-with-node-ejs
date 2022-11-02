@@ -1,13 +1,6 @@
-<h2>Details of <%= character.name %></h2>
-
-<h3>Occupation: <%= character.occupation %></h3>
-
-<p>Weapon: <%= character.weapon %></p>
-<a href="/characters/<%= character.id %>/update">Edit</a>
-
-<form method="POST" action="/characters/<%= character.id %>/delete">
+<form method="POST" action="/characters/<%= character.id %>/update">
     <label> Name<input name="name" type="text" value="<%= character.name %> " /></label>
     <label> Occupation<input name="occupation" type="text" value="<%= character.occupation %>" /></label>
     <label> Weapon<input name="weapon" type="text" value="<%= character.weapon %>" /></label>
-    <button> Delete</button>
+    <button> Edit</button>
 </form>
